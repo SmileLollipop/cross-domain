@@ -20,7 +20,7 @@ Xhr level2支持的新标准，允许发起ajax跨域请求，但是为了跨域
  res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE');
  res.setHeader('Access-Control-Allow-Headers', 'test,other');
  
- function crossAjax() {
+function crossAjax() {
     $.ajax('http://b.test.com/test', {
         type: 'PUT',
         headers: {test: 'haha'}
@@ -28,6 +28,5 @@ Xhr level2支持的新标准，允许发起ajax跨域请求，但是为了跨域
         alert(data);
     });
 }
-
 
 
